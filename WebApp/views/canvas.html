@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+                
+        <link href="stylesheets/style.css" rel="stylesheet" type="text/css">
+
+        <title>Plotter</title>
+        
+    </head>
+    <body>
+      <div id="wrapper">
+          <div id="header" >
+              <div class="tools">
+                <table>
+                    <tr>
+                        <td>
+                            <div class="buttons">
+                                <button id="line">
+                                  <img src="images/line.png"/>
+                                </button>
+                                <button id="rect">
+                                  <img src="images/rect.png"/>
+                                </button>
+                                <button id="pencil">
+                                    <img src="images/pencil.png"/>
+                                </button>
+                            </div>
+                        </td>
+                        <td>
+                            <div id="user" class="pull-right">
+                               
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="precision">
+                                <input type="range" min="0" max="50" value="0" id="pencil-precision" step="1">
+                            </div>
+                        </td>
+                        <td>
+                            <div id="cant-users" class="pull-right">
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+              
+                  
+              </div>
+          </div>
+
+          <div id="content">
+              <div class="canvas-container">
+                  <canvas id="imageView" width="400" height="300">
+                  </canvas>
+              </div>
+          </div>
+
+          <div id="footer">
+              You have X seconds for draw or 
+              <a href='/signout'> Sign Out </a>
+          </div>
+      </div>
+            <script src="javascripts/jquery-1.11.0.js"></script>
+            <script src="socket.io/socket.io.js"></script>
+            <script type="text/javascript" src="javascripts/scripts.js"></script>
+            <script type="text/javascript" src="javascripts/LinkedList.js"></script>
+            <script type="text/javascript" src="javascripts/Precision.js"></script>
+            <script type="text/javascript" src="javascripts/Communication.js"></script>
+            <script type="text/javascript" src="javascripts/Drawing.js"></script>
+            <script type="text/javascript" src="javascripts/Canvas.js"></script>
+
+    </body>
+</html>
